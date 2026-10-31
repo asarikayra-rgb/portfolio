@@ -1,1 +1,30 @@
-
+:root{--bg:#0f1420;--card:#171e2e;--line:#27314a;--text:#e6eaf3;--mut:#9aa6c1;--acc:#5b8cff;--acc2:#35d0a5;--warn:#ff9f43}
+@media(prefers-color-scheme:light){:root{--bg:#f6f8fc;--card:#fff;--line:#dde3ef;--text:#182033;--mut:#5b6784}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,Segoe UI,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+nav{border-bottom:1px solid var(--line);padding:14px 0}
+nav .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
+.hero{padding:48px 0 24px}
+.hero h1{font-size:clamp(28px,5vw,42px);margin:8px 0}
+.tag{display:inline-block;font-size:13px;padding:3px 10px;border-radius:99px;border:1px solid var(--line);color:var(--mut);margin:0 6px 6px 0}
+.tag.ok{color:var(--acc2);border-color:var(--acc2)}.tag.wip{color:var(--warn);border-color:var(--warn)}
+.btns{margin:18px 0}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;background:var(--acc);color:#fff;font-weight:600;margin:0 8px 8px 0}
+.btn.alt{background:transparent;border:1px solid var(--acc);color:var(--acc)}
+.btn:hover{text-decoration:none;opacity:.9}
+.shot{background:var(--card);border:2px dashed var(--line);border-radius:12px;min-height:240px;display:flex;align-items:center;justify-content:center;color:var(--mut);text-align:center;padding:16px;overflow:hidden}
+.shot img,.video iframe{width:100%;border:0;border-radius:10px}
+.video iframe{aspect-ratio:16/9}
+section{padding:26px 0;border-top:1px solid var(--line)}
+h2{margin:0 0 12px;font-size:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.card b{display:block;margin-bottom:4px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+.facts div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px}
+.facts small{color:var(--mut);display:block}
+li{margin:6px 0}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--mut);font-size:14px;text-align:center}
+.todo{background:rgba(255,159,67,.15);padding:0 4px;border-radius:4px}
