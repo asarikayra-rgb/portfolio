@@ -40,7 +40,7 @@ I am currently looking for a **Game Design Internship or junior game design role
         <img src="https://img.shields.io/badge/C%23-178600?logo=csharp&logoColor=white" alt="C#">
         <img src="https://img.shields.io/badge/Android%20%7C%20PC-blue" alt="Platforms">
       </p>
-      <a href="https://github.com/YOUR-USERNAME/3d-endless-runner-showcase"><b>Case study</b></a> |
+      <a href="https://asarikayra-rgb.github.io/portfolio/case-studies/endless-runner.html"><b>Case study</b></a> |
       <a href="[ADD PLAY LINK]"><b>Play</b></a>
     </td>
     <td width="33%" valign="top">
