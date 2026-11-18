@@ -1,1 +1,1457 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Last Day on Earth | Game Design Case Study – Keyy</title>
+
+<meta name="description" content="A complete game design analysis of Last Day on Earth: Survival, exploring survival mechanics, crafting, base building, combat, progression and UI/UX design.">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* IMAGE GALLERY */
+
+.gallery {
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:16px;
+margin-top:20px;
+}
+
+.gallery img {
+width:100%;
+height:230px;
+object-fit:cover;
+border-radius:12px;
+border:1px solid rgba(255,255,255,.12);
+}
+
+.gallery figure {
+margin:0;
+}
+
+.gallery figcaption {
+font-size:12px;
+opacity:.7;
+margin-top:8px;
+}
+
+/* COMPARISON */
+
+.comparison {
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:18px;
+margin-top:20px;
+}
+
+.comparison img {
+width:100%;
+height:230px;
+object-fit:cover;
+border-radius:12px;
+}
+
+.compare-card {
+padding:14px;
+border:1px solid rgba(255,255,255,.12);
+border-radius:14px;
+background:rgba(255,255,255,.03);
+}
+
+.compare-card h3 {
+font-size:16px;
+margin-bottom:10px;
+}
+
+.label {
+display:inline-block;
+font-size:11px;
+padding:5px 9px;
+border-radius:5px;
+margin-bottom:10px;
+background:rgba(255,255,255,.1);
+}
+
+.proposed {
+background:rgba(80,180,120,.15);
+}
+
+.media-placeholder {
+min-height:200px;
+border:1px dashed rgba(255,255,255,.3);
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+opacity:.7;
+}
+
+.gallery-video iframe {
+width:100%;
+aspect-ratio:16/9;
+border:0;
+border-radius:12px;
+}
+
+@media(max-width:650px) {
+
+.gallery,
+.comparison {
+grid-template-columns:1fr;
+}
+
+.gallery img,
+.comparison img {
+height:auto;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<div class="wrap">
+
+<a href="https://github.com/asarikayra-rgb/portfolio">
+<b>&larr; Keyy | Game Designer</b>
+</a>
+
+<span>
+
+<a href="https://aadika-games.itch.io">itch.io</a>
+
+&middot;
+
+<a href="mailto:ADD_EMAIL">Email</a>
+
+</span>
+
+</div>
+
+</nav>
+
+
+
+<!-- HERO -->
+
+<header class="hero wrap">
+
+<div>
+
+<span class="tag">Game Analysis</span>
+
+<span class="tag">Survival</span>
+
+<span class="tag">Mobile</span>
+
+<span class="tag">UI/UX</span>
+
+<span class="tag ok">Case Study</span>
+
+</div>
+
+
+<h1>Last Day on Earth: Survival</h1>
+
+
+<p>
+
+A detailed game design analysis of a post-apocalyptic
+survival experience, exploring resource management,
+crafting, base building, combat and player progression.
+
+</p>
+
+
+<div class="btns">
+
+<a class="btn"
+href="https://play.google.com/store/apps/details?id=zombie.survival.craft.z">
+
+Official Game
+
+</a>
+
+<a class="btn alt"
+href="https://kefirgames.helpshift.com/hc/en/5-last-day-on-earth/">
+
+Game Support
+
+</a>
+
+</div>
+
+
+<div class="shot">
+
+<img
+src="images/last-day-hero.jpg"
+alt="Last Day on Earth gameplay"
+style="width:100%;border-radius:12px;">
+
+</div>
+
+
+</header>
+
+
+
+<main class="wrap">
+
+
+<!-- QUICK FACTS -->
+
+<section>
+
+<h2>Quick Facts</h2>
+
+<div class="facts">
+
+<div>
+<small>Developer</small>
+<b>KEFIR!</b>
+</div>
+
+<div>
+<small>Genre</small>
+<b>Survival Action</b>
+</div>
+
+<div>
+<small>Platform</small>
+<b>Android / iOS</b>
+</div>
+
+<div>
+<small>Perspective</small>
+<b>3D Isometric</b>
+</div>
+
+<div>
+<small>Category</small>
+<b>Game Design Analysis</b>
+</div>
+
+<div>
+<small>Focus</small>
+<b>Systems + UI/UX</b>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PROBLEM / GOAL -->
+
+<section>
+
+<h2>The Problem / Goal</h2>
+
+<p>
+
+Analyze how Last Day on Earth combines survival,
+exploration, resource gathering, crafting and
+base building into a connected gameplay experience.
+
+</p>
+
+<p>
+
+The objective of this case study is to understand
+how the game creates player motivation through
+resource scarcity, progression, environmental danger
+and long-term survival goals.
+
+</p>
+
+<p>
+
+<b>My Role:</b>
+
+Game Design Analysis, Gameplay Systems Analysis,
+UI/UX Evaluation, Progression Analysis
+and Design Improvement Concepts.
+
+</p>
+
+</section>
+
+
+
+<!-- CORE GAMEPLAY LOOP -->
+
+<section>
+
+<h2>Core Gameplay Loop</h2>
+
+<p>
+
+The gameplay revolves around collecting resources,
+surviving dangerous locations, crafting useful items
+and gradually strengthening the player's base.
+
+</p>
+
+<div class="grid">
+
+<div class="card">
+
+<b>01. Explore</b>
+
+Travel to different locations
+and discover resources.
+
+</div>
+
+
+<div class="card">
+
+<b>02. Gather</b>
+
+Collect wood, stone, food,
+materials and equipment.
+
+</div>
+
+
+<div class="card">
+
+<b>03. Survive</b>
+
+Manage health, hunger, thirst
+and dangerous encounters.
+
+</div>
+
+
+<div class="card">
+
+<b>04. Craft</b>
+
+Convert collected materials
+into useful survival equipment.
+
+</div>
+
+
+<div class="card">
+
+<b>05. Build</b>
+
+Expand and improve your
+survival base.
+
+</div>
+
+
+<div class="card">
+
+<b>06. Progress</b>
+
+Unlock new equipment,
+locations and challenges.
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- KEY FEATURES -->
+
+<section>
+
+<h2>Key Features</h2>
+
+<div class="grid">
+
+
+<div class="card">
+
+<b>Survival System</b>
+
+Manage health, hunger and thirst
+while exploring dangerous environments.
+
+</div>
+
+
+<div class="card">
+
+<b>Resource Gathering</b>
+
+Collect materials from forests,
+locations and abandoned areas.
+
+</div>
+
+
+<div class="card">
+
+<b>Crafting System</b>
+
+Transform raw materials into
+tools, weapons, clothing and equipment.
+
+</div>
+
+
+<div class="card">
+
+<b>Base Building</b>
+
+Construct floors, walls,
+storage and defensive structures.
+
+</div>
+
+
+<div class="card">
+
+<b>Zombie Combat</b>
+
+Fight different enemies using
+melee weapons and firearms.
+
+</div>
+
+
+<div class="card">
+
+<b>Inventory Management</b>
+
+Organize collected resources,
+equipment and survival items.
+
+</div>
+
+
+<div class="card">
+
+<b>World Exploration</b>
+
+Explore forests, bunkers,
+farms and other dangerous locations.
+
+</div>
+
+
+<div class="card">
+
+<b>Progression System</b>
+
+Unlock new crafting recipes,
+equipment and exploration opportunities.
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- SURVIVAL SYSTEM -->
+
+<section>
+
+<h2>Survival Mechanics</h2>
+
+<p>
+
+Survival mechanics create continuous pressure
+on the player and encourage resource planning.
+
+</p>
+
+
+<div class="gallery">
+
+<figure>
+
+<img src="images/survival-hud.jpg"
+alt="Survival HUD">
+
+<figcaption>
+Survival HUD – ADD ACTUAL SCREENSHOT
+</figcaption>
+
+</figure>
+
+
+<figure>
+
+<img src="images/survival-inventory.jpg"
+alt="Survival inventory">
+
+<figcaption>
+Survival Inventory – ADD ACTUAL SCREENSHOT
+</figcaption>
+
+</figure>
+
+</div>
+
+
+<h3>Design Analysis</h3>
+
+<ul>
+
+<li>
+Health management creates consequences
+for dangerous encounters.
+</li>
+
+<li>
+Hunger and thirst encourage players
+to prepare before exploration.
+</li>
+
+<li>
+Consumable resources create decisions
+about what to carry and when to use it.
+</li>
+
+<li>
+Survival pressure connects exploration
+with inventory and resource management.
+</li>
+
+</ul>
+
+</section>
+
+
+
+<!-- RESOURCE MANAGEMENT -->
+
+<section>
+
+<h2>Resource Gathering & Crafting</h2>
+
+<p>
+
+Resource gathering forms the foundation
+of the crafting and progression systems.
+
+Players collect materials from different locations
+and use them to create tools, weapons,
+equipment and construction components.
+
+</p>
+
+
+<div class="gallery">
+
+<figure>
+
+<img src="images/resource-gathering.jpg"
+alt="Resource gathering gameplay">
+
+<figcaption>
+Resource Gathering – ADD SCREENSHOT
+</figcaption>
+
+</figure>
+
+
+<figure>
+
+<img src="images/crafting-system.jpg"
+alt="Crafting system">
+
+<figcaption>
+Crafting Interface – ADD SCREENSHOT
+</figcaption>
+
+</figure>
+
+</div>
+
+
+<h3>Design Analysis</h3>
+
+<ul>
+
+<li>
+Resources have different levels of importance
+depending on crafting requirements.
+</li>
+
+<li>
+Crafting creates long-term goals
+for collected materials.
+</li>
+
+<li>
+Recipe unlocks give players
+additional progression objectives.
+</li>
+
+<li>
+Limited inventory space encourages
+resource prioritization.
+</li>
+
+</ul>
+
+</section>
+
+
+
+<!-- BASE BUILDING -->
+
+<section>
+
+<h2>Base Building System</h2>
+
+<p>
+
+Base building gives players a persistent space
+to store resources, craft equipment
+and gradually improve their shelter.
+
+</p>
+
+
+<div class="gallery">
+
+<figure>
+
+<img src="images/base-building.jpg"
+alt="Base building">
+
+<figcaption>
+Base Construction – ADD SCREENSHOT
+</figcaption>
+
+</figure>
+
+
+<figure>
+
+<img src="images/base-defense.jpg"
+alt="Base defense">
+
+<figcaption>
+Base Layout and Defense – ADD SCREENSHOT
+</figcaption>
+
+</figure>
+
+</div>
+
+
+<h3>Design Analysis</h3>
+
+<ul>
+
+<li>
+Building materials create a connection
+between exploration and base progression.
+</li>
+
+<li>
+Storage structures support
+long-term resource management.
+</li>
+
+<li>
+Wall upgrades provide
+a visible sense of progression.
+</li>
+
+<li>
+The base acts as a central hub
+for preparation and crafting.
+</li>
+
+</ul>
+
+</section>
+
+
+
+<!-- COMBAT -->
+
+<section>
+
+<h2>Combat & Enemy Design</h2>
+
+<p>
+
+Combat introduces risk during exploration
+and forces players to consider weapons,
+health and available resources.
+
+</p>
+
+
+<div class="gallery">
+
+<figure>
+
+<img src="images/zombie-combat.jpg"
+alt="Zombie combat gameplay">
+
+<figcaption>
+Zombie Encounter – ADD SCREENSHOT
+</figcaption>
+
+</figure>
+
+
+<figure>
+
+<img src="images/weapons.jpg"
+alt="Weapons and equipment">
+
+<figcaption>
+Weapons and Equipment – ADD SCREENSHOT
+</figcaption>
+
+</figure>
+
+</div>
+
+
+<h3>Design Analysis</h3>
+
+<ul>
+
+<li>
+Different enemies create different
+levels of danger.
+</li>
+
+<li>
+Weapon selection influences
+combat decisions.
+</li>
+
+<li>
+Health and equipment management
+are important before entering dangerous areas.
+</li>
+
+<li>
+Combat risk increases the importance
+of preparation and resource planning.
+</li>
+
+</ul>
+
+</section>
+
+
+
+<!-- LEVEL DESIGN -->
+
+<section>
+
+<h2>Level & Environment Design</h2>
+
+<p>
+
+The world is divided into different locations
+with varying resources, dangers and exploration goals.
+
+</p>
+
+
+<div class="gallery">
+
+<figure>
+
+<img src="images/forest-location.jpg"
+alt="Forest location">
+
+<figcaption>
+Forest Location – ADD SCREENSHOT
+</figcaption>
+
+</figure>
+
+
+<figure>
+
+<img src="images/bunker-location.jpg"
+alt="Bunker location">
+
+<figcaption>
+Bunker Exploration – ADD SCREENSHOT
+</figcaption>
+
+</figure>
+
+
+<figure>
+
+<img src="images/farm-location.jpg"
+alt="Farm location">
+
+<figcaption>
+Farm Environment – ADD SCREENSHOT
+</figcaption>
+
+</figure>
+
+
+<figure>
+
+<img src="images/world-map.jpg"
+alt="World map">
+
+<figcaption>
+World Map – ADD SCREENSHOT
+</figcaption>
+
+</figure>
+
+</div>
+
+
+<h3>Design Analysis</h3>
+
+<ul>
+
+<li>
+Different locations provide
+different exploration opportunities.
+</li>
+
+<li>
+Danger levels influence
+player preparation.
+</li>
+
+<li>
+Location-based rewards encourage
+exploration and replayability.
+</li>
+
+<li>
+Environmental variety helps
+differentiate gameplay experiences.
+</li>
+
+</ul>
+
+</section>
+
+
+
+<!-- UI UX -->
+
+<section>
+
+<h2>UI/UX Breakdown</h2>
+
+<p>
+
+The interface communicates important survival information
+and provides access to inventory, crafting,
+equipment and navigation.
+
+</p>
+
+
+<div class="gallery">
+
+<figure>
+
+<img src="images/game-hud.jpg"
+alt="Game HUD">
+
+<figcaption>
+Gameplay HUD – ADD SCREENSHOT
+</figcaption>
+
+</figure>
+
+
+<figure>
+
+<img src="images/inventory-ui.jpg"
+alt="Inventory UI">
+
+<figcaption>
+Inventory Interface – ADD SCREENSHOT
+</figcaption>
+
+</figure>
+
+
+<figure>
+
+<img src="images/crafting-ui.jpg"
+alt="Crafting UI">
+
+<figcaption>
+Crafting Interface – ADD SCREENSHOT
+</figcaption>
+
+</figure>
+
+
+<figure>
+
+<img src="images/map-ui.jpg"
+alt="Map UI">
+
+<figcaption>
+Map Navigation – ADD SCREENSHOT
+</figcaption>
+
+</figure>
+
+</div>
+
+
+<h3>UI/UX Observations</h3>
+
+<ul>
+
+<li>
+Survival indicators communicate
+important player conditions.
+</li>
+
+<li>
+Inventory management supports
+resource organization.
+</li>
+
+<li>
+Crafting interfaces connect
+recipes with required materials.
+</li>
+
+<li>
+Map navigation helps players
+choose exploration destinations.
+</li>
+
+</ul>
+
+</section>
+
+
+
+<!-- DESIGN HIGHLIGHTS -->
+
+<section>
+
+<h2>Game Design Highlights</h2>
+
+<ul>
+
+<li>
+Connected survival, crafting
+and exploration into one gameplay loop.
+</li>
+
+<li>
+Used resource scarcity to create
+meaningful player decisions.
+</li>
+
+<li>
+Connected crafting requirements
+with exploration rewards.
+</li>
+
+<li>
+Used base building as a long-term
+progression system.
+</li>
+
+<li>
+Created risk-versus-reward decisions
+through dangerous locations.
+</li>
+
+<li>
+Used equipment and weapon progression
+to support combat challenges.
+</li>
+
+<li>
+Created multiple interconnected systems
+that encourage long-term engagement.
+</li>
+
+</ul>
+
+</section>
+
+
+
+<!-- BEFORE AFTER -->
+
+<section>
+
+<h2>Before & After – UI/UX Redesign</h2>
+
+<p>
+
+This section presents my proposed interface improvements
+based on the original game's design.
+These are personal design concepts,
+not official changes made by the developer.
+
+</p>
+
+
+<div class="comparison">
+
+
+<div class="compare-card">
+
+<span class="label">BEFORE – ORIGINAL</span>
+
+<h3>Original Inventory</h3>
+
+<img src="images/inventory-before.jpg"
+alt="Original inventory interface">
+
+<p>
+ADD: Original game inventory screenshot.
+</p>
+
+</div>
+
+
+<div class="compare-card">
+
+<span class="label proposed">AFTER – MY CONCEPT</span>
+
+<h3>Improved Inventory Concept</h3>
+
+<img src="images/inventory-after.jpg"
+alt="Proposed inventory redesign">
+
+<p>
+Proposed improvements:
+clearer item categories,
+better visual hierarchy
+and easier item identification.
+</p>
+
+</div>
+
+
+<div class="compare-card">
+
+<span class="label">BEFORE – ORIGINAL</span>
+
+<h3>Original Crafting Interface</h3>
+
+<img src="images/crafting-before.jpg"
+alt="Original crafting interface">
+
+<p>
+ADD: Original crafting screenshot.
+</p>
+
+</div>
+
+
+<div class="compare-card">
+
+<span class="label proposed">AFTER – MY CONCEPT</span>
+
+<h3>Improved Crafting Concept</h3>
+
+<img src="images/crafting-after.jpg"
+alt="Proposed crafting redesign">
+
+<p>
+Proposed improvements:
+clearer resource requirements,
+crafting progress visibility
+and improved navigation.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- IMPROVEMENTS -->
+
+<section>
+
+<h2>Gameplay Analysis & Improvements</h2>
+
+<p>
+
+The following are design opportunities identified
+through analysis. They are proposed improvements,
+not verified problems reported by the developer.
+
+</p>
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<b>Inventory Organization</b>
+
+Improve item categorization
+and make resource management
+easier to navigate.
+
+</div>
+
+
+<div class="card">
+
+<b>New Player Guidance</b>
+
+Provide clearer early-game guidance
+for crafting, gathering
+and survival priorities.
+
+</div>
+
+
+<div class="card">
+
+<b>Crafting Clarity</b>
+
+Make missing crafting materials
+and required resources
+easier to identify.
+
+</div>
+
+
+<div class="card">
+
+<b>Combat Feedback</b>
+
+Improve visual feedback
+for attacks, damage
+and enemy interactions.
+
+</div>
+
+
+<div class="card">
+
+<b>Progression Clarity</b>
+
+Make long-term crafting
+and base-building goals
+easier to understand.
+
+</div>
+
+
+<div class="card">
+
+<b>Resource Planning</b>
+
+Improve information about
+resource requirements
+before starting an expedition.
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- PLAYTEST -->
+
+<section>
+
+<h2>Gameplay Analysis & Iteration</h2>
+
+<p>
+
+Instead of presenting unverified playtest results,
+this case study focuses on analyzing the original
+gameplay systems and identifying possible
+design improvements.
+
+</p>
+
+
+<ul>
+
+<li>
+<strong>Inventory Experience:</strong>
+Analyzed how limited storage affects
+resource collection and item prioritization.
+</li>
+
+<li>
+<strong>Crafting Experience:</strong>
+Reviewed how crafting requirements
+connect resource gathering with progression.
+</li>
+
+<li>
+<strong>Survival Management:</strong>
+Examined how hunger, thirst and health
+influence exploration decisions.
+</li>
+
+<li>
+<strong>Player Progression:</strong>
+Analyzed how crafting unlocks,
+equipment and base upgrades
+create long-term objectives.
+</li>
+
+<li>
+<strong>Exploration:</strong>
+Reviewed the relationship between
+location danger, resource rewards
+and player preparation.
+</li>
+
+</ul>
+
+</section>
+
+
+
+<!-- WHAT I LEARNED -->
+
+<section>
+
+<h2>What I Learned</h2>
+
+<ul>
+
+<li>
+Understanding interconnected gameplay systems.
+</li>
+
+<li>
+Analyzing survival and resource management mechanics.
+</li>
+
+<li>
+Understanding risk-versus-reward game design.
+</li>
+
+<li>
+Studying crafting and base-building progression.
+</li>
+
+<li>
+Evaluating inventory and mobile UI/UX design.
+</li>
+
+<li>
+Understanding how exploration supports
+long-term player engagement.
+</li>
+
+<li>
+Identifying gameplay improvement opportunities
+through structured game analysis.
+</li>
+
+</ul>
+
+
+<p>
+
+<b>Next:</b>
+
+Create UI redesign concepts,
+develop gameplay flow diagrams
+and explore improvements to inventory
+and crafting interactions.
+
+</p>
+
+</section>
+
+
+
+<!-- GAMEPLAY GIF -->
+
+<section>
+
+<h2>Gameplay GIFs</h2>
+
+<div class="gallery">
+
+<figure>
+
+<img src="images/ldoe-exploration.gif"
+alt="Exploration gameplay GIF">
+
+<figcaption>
+Exploration Gameplay
+</figcaption>
+
+</figure>
+
+
+<figure>
+
+<img src="images/ldoe-combat.gif"
+alt="Combat gameplay GIF">
+
+<figcaption>
+Combat Gameplay
+</figcaption>
+
+</figure>
+
+
+<figure>
+
+<img src="images/ldoe-crafting.gif"
+alt="Crafting gameplay GIF">
+
+<figcaption>
+Crafting Interaction
+</figcaption>
+
+</figure>
+
+
+<figure>
+
+<img src="images/ldoe-base.gif"
+alt="Base building gameplay GIF">
+
+<figcaption>
+Base Building
+</figcaption>
+
+</figure>
+
+</div>
+
+</section>
+
+
+
+<!-- VIDEO -->
+
+<section>
+
+<h2>Gameplay Video</h2>
+
+<div class="gallery-video">
+
+<div class="media-placeholder">
+
+ADD YOUTUBE GAMEPLAY EMBED
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- SOURCES -->
+
+<section>
+
+<h2>Research References</h2>
+
+<ul>
+
+<li>
+<a href="https://play.google.com/store/apps/details?id=zombie.survival.craft.z">
+Official Google Play Game Page
+</a>
+</li>
+
+<li>
+<a href="https://kefirgames.helpshift.com/hc/en/5-last-day-on-earth/">
+Official KEFIR Help Center
+</a>
+</li>
+
+<li>
+<a href="https://apps.apple.com/us/app/last-day-on-earth-survival/id1241932094">
+Apple App Store
+</a>
+</li>
+
+</ul>
+
+<p>
+Game screenshots and trademarks belong to their
+respective owners. This is an independent
+educational game design analysis.
+</p>
+
+</section>
+
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="wrap">
+
+&copy; Keyy. Independent Game Design Analysis.
+
+&middot;
+
+<a href="https://linkedin.com/in/ADD_LINKEDIN">
+LinkedIn
+</a>
+
+&middot;
+
+<a href="https://github.com/asarikayra-rgb/portfolio">
+Portfolio
+</a>
+
+</div>
+
+</footer>
+
+
+</body>
+</html>
