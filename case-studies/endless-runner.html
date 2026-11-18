@@ -1,16 +1,450 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>3D Endless Runner | Keyy – Game Designer</title><meta name="description" content="A fast 3D runner with swappable obstacles and a difficulty curve that stays fair."><link rel="stylesheet" href="style.css"></head><body>
-<nav><div class="wrap"><a href="https://github.com/asarikayra-rgb/portfolio"><b>&larr; Keyy | Game Designer</b></a><span><a href="https://aadika-games.itch.io">itch.io</a> &middot; <a href="mailto:ADD_EMAIL">Email</a></span></div></nav>
-<header class="hero wrap"><div><span class="tag ">Unity</span><span class="tag ">C#</span><span class="tag ">Android | PC</span><span class="tag ok">Shipped</span></div><h1>3D Endless Runner</h1><p>A fast 3D runner with swappable obstacles and a difficulty curve that stays fair.</p>
-<div class="btns"><a class="btn" href="https://aadika-games.itch.io/ADD-RUNNER-SLUG">Play on itch.io</a><a class="btn alt" href="https://aadika-games.itch.io">All games</a></div>
-<div class="shot"><span class="todo">ADD: gameplay GIF/screenshot &rarr; &lt;img src="images/endless-runner-hero.gif"&gt;</span></div></header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>3D Endless Runner | Keyy – Game Designer</title>
+
+<meta name="description" content="A 3D endless runner developed in Unity featuring lane switching, jumping, procedural obstacle spawning, coin collection, progressive difficulty and score systems.">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+<div class="wrap">
+
+<a href="https://github.com/asarikayra-rgb/portfolio">
+<b>&larr; Keyy | Game Designer</b>
+</a>
+
+<span>
+<a href="https://aadika-games.itch.io">itch.io</a>
+&middot;
+<a href="mailto:ADD_EMAIL">Email</a>
+</span>
+
+</div>
+</nav>
+
+
+<!-- HERO -->
+
+<header class="hero wrap">
+
+<div>
+<span class="tag">Unity</span>
+<span class="tag">C#</span>
+<span class="tag">3D</span>
+<span class="tag">Android | PC</span>
+<span class="tag ok">Playable Build</span>
+</div>
+
+<h1>3D Endless Runner</h1>
+
+<p>
+A 3D endless runner featuring lane-based movement,
+jumping mechanics, random obstacle spawning,
+coin collection and progressively challenging gameplay.
+</p>
+
+<div class="btns">
+
+<a class="btn" href="https://aadika-games.itch.io/ADD-RUNNER-SLUG">
+Play on itch.io
+</a>
+
+<a class="btn alt" href="https://aadika-games.itch.io">
+All Games
+</a>
+
+</div>
+
+<div class="shot">
+<span class="todo">
+ADD: gameplay GIF or screenshot →
+&lt;img src="images/endless-runner-hero.gif"&gt;
+</span>
+</div>
+
+</header>
+
+
 <main class="wrap">
-<section><h2>Quick Facts</h2><div class="facts"><div><small>Engine</small><b>Unity</b></div><div><small>Platform</small><b>Android, PC</b></div><div><small>Duration</small><b>Feb 2021 – Dec 2022</b></div><div><small>Role</small><b>Design + Dev</b></div></div></section>
-<section><h2>The Problem / Goal</h2><p>Make a runner that feels fast on day one but never feels cheap. Goal: readable obstacles, rising challenge, smooth mobile controls.</p><p><b>My role:</b> Game design, C# gameplay scripting, UI/UX, monetization flow.</p></section>
-<section><h2>Key Features</h2><div class="grid"><div class="card"><b>Swappable obstacles</b>Modular obstacle sets, easy to mix and rebalance.</div><div class="card"><b>Difficulty curve</b>Speed and density ramp gradually with score.</div><div class="card"><b>UI/UX flow</b>Clear menus, retry in one tap.</div><div class="card"><b>Monetization</b>Non-intrusive reward flow.</div></div></section>
-<section><h2>Design Highlights</h2><ul><li>Obstacles are telegraphed early so every death feels fair.</li><li>Speed increases in steps, giving players time to adapt.</li><li>Controls tuned separately for touch and keyboard.</li></ul></section>
-<section><h2>Playtest &amp; Iteration</h2><ul><li>ADD: one real change you made after playtesting (e.g. "Players died at 20s, so I slowed the early ramp").</li></ul><div class="shot"><span class="todo">ADD: before/after screenshot or playtest chart</span></div></section>
-<section><h2>What I Learned</h2><ul><li>Tuning difficulty with real player data.</li><li>Designing for two platforms.</li><li>Using GitHub for version control.</li></ul><p><b>Next:</b> Add power-ups and a leaderboard.</p></section>
-<section><h2>Gameplay Video</h2><div class="video"><div class="shot"><span class="todo">ADD: replace this box with &lt;iframe src="YOUTUBE_EMBED_LINK" allowfullscreen&gt;&lt;/iframe&gt;</span></div></div></section>
+
+
+<!-- QUICK FACTS -->
+
+<section>
+
+<h2>Quick Facts</h2>
+
+<div class="facts">
+
+<div>
+<small>Engine</small>
+<b>Unity</b>
+</div>
+
+<div>
+<small>Platform</small>
+<b>Android, PC</b>
+</div>
+
+<div>
+<small>Duration</small>
+<b>Feb 2021 – Dec 2022</b>
+</div>
+
+<div>
+<small>Role</small>
+<b>Game Design + Development</b>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROBLEM / GOAL -->
+
+<section>
+
+<h2>The Problem / Goal</h2>
+
+<p>
+Create a fast-paced 3D endless runner with responsive
+controls, readable obstacles and progressively increasing
+difficulty. The goal was to make gameplay challenging
+while maintaining fair obstacle placement and smooth
+player movement.
+</p>
+
+<p>
+The project focused on combining movement mechanics,
+random obstacle spawning, collectibles and a rewarding
+score-based progression system.
+</p>
+
+<p>
+<b>My Role:</b>
+Game Design, C# Gameplay Programming, Player Movement,
+Obstacle Systems, UI/UX Design, Scoring and Game Flow.
+</p>
+
+</section>
+
+
+<!-- KEY FEATURES -->
+
+<section>
+
+<h2>Key Features</h2>
+
+<div class="grid">
+
+<div class="card">
+<b>Lane-Based Movement</b>
+Three-lane movement system with keyboard and
+touch-based controls.
+</div>
+
+<div class="card">
+<b>Jump Mechanics</b>
+Jump functionality with ground detection
+for platform navigation.
+</div>
+
+<div class="card">
+<b>Dynamic Obstacle Spawning</b>
+Random lane-based obstacle spawning
+to create gameplay variation.
+</div>
+
+<div class="card">
+<b>Coin Collection</b>
+Collectible coins with trigger-based
+detection and scoring.
+</div>
+
+<div class="card">
+<b>Camera Follow</b>
+Follow camera system to maintain
+a consistent gameplay view.
+</div>
+
+<div class="card">
+<b>Progressive Difficulty</b>
+Increasing game speed and challenge
+to keep gameplay engaging.
+</div>
+
+<div class="card">
+<b>Score & High Score</b>
+Score tracking and persistent
+high-score storage using PlayerPrefs.
+</div>
+
+<div class="card">
+<b>Revive System</b>
+A simulated rewarded-ad revive flow
+to give players another chance.
+</div>
+
+<div class="card">
+<b>Game Over & Retry</b>
+Game-over interface with score display
+and restart functionality.
+</div>
+
+</div>
+
+</section>
+
+
+<!-- DESIGN HIGHLIGHTS -->
+
+<section>
+
+<h2>Design Highlights</h2>
+
+<ul>
+
+<li>
+Designed lane-based movement to make navigation
+simple and easy to understand.
+</li>
+
+<li>
+Used random lane-based obstacle spawning
+to create unpredictable gameplay.
+</li>
+
+<li>
+Focused on balancing forward speed and
+obstacle placement.
+</li>
+
+<li>
+Introduced collectible coins to encourage
+continued player engagement.
+</li>
+
+<li>
+Designed a score and high-score system
+to encourage replayability.
+</li>
+
+<li>
+Created a clear Game Over and retry flow
+to reduce unnecessary navigation.
+</li>
+
+<li>
+Included a simulated revive flow as part
+of the monetization design.
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- PLAYTEST & ITERATION -->
+
+<section>
+
+<h2>Playtest &amp; Iteration</h2>
+
+<p>
+During development, I encountered several
+movement, physics and collision-related
+challenges while testing the gameplay.
+</p>
+
+<ul>
+
+<li>
+
+<strong>Player Movement & Vibration:</strong>
+
+The character experienced unwanted movement
+and vibration due to conflicts between
+Transform-based movement and Rigidbody physics.
+I investigated separating movement behaviour
+from physics-based actions.
+</li>
+
+
+<li>
+
+<strong>Obstacle Collision:</strong>
+
+The player sometimes passed through obstacles
+at higher movement speeds. Reducing forward
+speed from 8 to 2 improved the behaviour,
+but collision tunnelling still needed further tuning.
+</li>
+
+
+<li>
+
+<strong>Player Getting Stuck:</strong>
+
+The character could become stuck inside obstacles,
+affecting movement and jumping.
+I investigated collider settings and
+collision handling.
+</li>
+
+
+<li>
+
+<strong>Jump & Ground Detection:</strong>
+
+Jumping behaviour became inconsistent
+after certain collision interactions.
+I investigated ground detection and
+Rigidbody-based jump behaviour.
+</li>
+
+
+<li>
+
+<strong>Obstacle Spawn Management:</strong>
+
+Excessive obstacle spawning affected
+gameplay readability.
+I worked on the spawning logic to improve
+obstacle distribution and gameplay balance.
+</li>
+
+</ul>
+
+<div class="shot">
+
+<span class="todo">
+ADD: Before/After gameplay screenshots
+or obstacle collision debugging screenshots.
+</span>
+
+</div>
+
+</section>
+
+
+<!-- WHAT I LEARNED -->
+
+<section>
+
+<h2>What I Learned</h2>
+
+<ul>
+
+<li>
+Understanding Unity Rigidbody physics
+and collision detection.
+</li>
+
+<li>
+Implementing lane-based player movement
+and jump mechanics using C#.
+</li>
+
+<li>
+Working with random obstacle spawning
+and collectible systems.
+</li>
+
+<li>
+Debugging movement conflicts,
+collision tunnelling and ground detection.
+</li>
+
+<li>
+Implementing score and persistent
+high-score systems using PlayerPrefs.
+</li>
+
+<li>
+Designing Game Over, retry and revive flows.
+</li>
+
+<li>
+Understanding gameplay balancing
+and progressive difficulty.
+</li>
+
+<li>
+Using GitHub for project version control.
+</li>
+
+</ul>
+
+<p>
+<b>Next:</b>
+Introduce additional power-ups, new obstacle
+variations, improved collision handling
+and a leaderboard system.
+</p>
+
+</section>
+
+
+<!-- GAMEPLAY VIDEO -->
+
+<section>
+
+<h2>Gameplay Video</h2>
+
+<div class="video">
+
+<div class="shot">
+
+<span class="todo">
+ADD: replace this box with
+&lt;iframe src="YOUTUBE_EMBED_LINK"
+allowfullscreen&gt;&lt;/iframe&gt;
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
 </main>
-<footer><div class="wrap">&copy; Keyy. Source code is private; walkthrough available on request. &middot; <a href="https://linkedin.com/in/ADD_LINKEDIN">LinkedIn</a> &middot; <a href="https://github.com/asarikayra-rgb/portfolio">Portfolio</a></div></footer></body></html>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="wrap">
+
+&copy; Keyy. Source code is private;
+walkthrough available on request.
+
+&middot;
+
+<a href="https://linkedin.com/in/ADD_LINKEDIN">
+LinkedIn
+</a>
+
+&middot;
+
+<a href="https://github.com/asarikayra-rgb/portfolio">
+Portfolio
+</a>
+
+</div>
+
+</footer>
+
+</body>
+</html>
