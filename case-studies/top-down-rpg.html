@@ -1,16 +1,454 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Top-Down RPG: Restore the World | Keyy – Game Designer</title><meta name="description" content="An environment-puzzle RPG where you restore polluted lands through dialogue, quests and a core restoration mechanic."><link rel="stylesheet" href="style.css"></head><body>
-<nav><div class="wrap"><a href="https://github.com/asarikayra-rgb/portfolio"><b>&larr; Keyy | Game Designer</b></a><span><a href="https://aadika-games.itch.io">itch.io</a> &middot; <a href="mailto:ADD_EMAIL">Email</a></span></div></nav>
-<header class="hero wrap"><div><span class="tag ">Unity</span><span class="tag ">C#</span><span class="tag wip">In Development</span></div><h1>Top-Down RPG: Restore the World</h1><p>An environment-puzzle RPG where you restore polluted lands through dialogue, quests and a core restoration mechanic.</p>
-<div class="btns"><a class="btn" href="https://aadika-games.itch.io/ADD-RPG-SLUG">Play prototype</a><a class="btn alt" href="https://aadika-games.itch.io">All games</a></div>
-<div class="shot"><span class="todo">ADD: gameplay GIF/screenshot &rarr; &lt;img src="images/top-down-rpg-hero.gif"&gt;</span></div></header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Terrabloom | Keyy – Game Designer</title>
+
+<meta name="description" content="Terrabloom is a cozy 2D environmental puzzle adventure developed in Unity 6, featuring environmental restoration, object interactions, NPC quests and pixel-art environments.">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+<div class="wrap">
+
+<a href="https://github.com/asarikayra-rgb/portfolio">
+<b>&larr; Keyy | Game Designer</b>
+</a>
+
+<span>
+<a href="https://aadika-games.itch.io">itch.io</a>
+&middot;
+<a href="mailto:ADD_EMAIL">Email</a>
+</span>
+
+</div>
+</nav>
+
+
+<!-- HERO SECTION -->
+
+<header class="hero wrap">
+
+<div>
+<span class="tag">Unity 6</span>
+<span class="tag">C#</span>
+<span class="tag">2D Pixel Art</span>
+<span class="tag">Android</span>
+<span class="tag wip">Prototype</span>
+</div>
+
+<h1>Terrabloom</h1>
+
+<p>
+A cozy 2D environmental puzzle adventure where players
+restore polluted environments through interactive puzzles,
+object interactions and exploration.
+</p>
+
+<div class="btns">
+
+<a class="btn" href="https://aadika-games.itch.io/ADD-TERRABLOOM-SLUG">
+Play Prototype
+</a>
+
+<a class="btn alt" href="https://aadika-games.itch.io">
+All Games
+</a>
+
+</div>
+
+<div class="shot">
+
+<span class="todo">
+ADD: Terrabloom gameplay GIF or screenshot →
+&lt;img src="images/terrabloom-hero.gif"&gt;
+</span>
+
+</div>
+
+</header>
+
+
 <main class="wrap">
-<section><h2>Quick Facts</h2><div class="facts"><div><small>Engine</small><b>Unity</b></div><div><small>Genre</small><b>Puzzle RPG</b></div><div><small>Status</small><b>Prototype</b></div><div><small>Role</small><b>Design + Dev</b></div></div></section>
-<section><h2>The Problem / Goal</h2><p>Turn environmental restoration into the core gameplay loop, so progress is visible in the world itself.</p><p><b>My role:</b> Game design, quest and dialogue systems, tilemap level design, C# scripting.</p></section>
-<section><h2>Key Features</h2><div class="grid"><div class="card"><b>Restoration mechanic</b>Clean polluted zones to unlock new areas.</div><div class="card"><b>Quest system</b>Objectives guide the player step by step.</div><div class="card"><b>Dialogue</b>NPCs give hints and story.</div><div class="card"><b>Tilemap world</b>Hand-built top-down environments.</div></div></section>
-<section><h2>Design Highlights</h2><ul><li>The world visibly heals, which acts as the reward.</li><li>Puzzles teach one idea at a time.</li><li>Dialogue doubles as a tutorial.</li></ul></section>
-<section><h2>Playtest &amp; Iteration</h2><ul><li>ADD: what playtesters found confusing and how you fixed it.</li></ul><div class="shot"><span class="todo">ADD: before/after screenshot or playtest chart</span></div></section>
-<section><h2>What I Learned</h2><ul><li>Building quest systems that scale.</li><li>Pacing story and puzzles.</li><li>Scoping a prototype.</li></ul><p><b>Next:</b> Add more regions, polish UI, publish a full demo.</p></section>
-<section><h2>Gameplay Video</h2><div class="video"><div class="shot"><span class="todo">ADD: replace this box with &lt;iframe src="YOUTUBE_EMBED_LINK" allowfullscreen&gt;&lt;/iframe&gt;</span></div></div></section>
+
+
+<!-- QUICK FACTS -->
+
+<section>
+
+<h2>Quick Facts</h2>
+
+<div class="facts">
+
+<div>
+<small>Engine</small>
+<b>Unity 6</b>
+</div>
+
+<div>
+<small>Genre</small>
+<b>Environmental Puzzle Adventure</b>
+</div>
+
+<div>
+<small>Platform</small>
+<b>Android</b>
+</div>
+
+<div>
+<small>Role</small>
+<b>Design + Development</b>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROBLEM / GOAL -->
+
+<section>
+
+<h2>The Problem / Goal</h2>
+
+<p>
+Transform environmental restoration into an interactive
+puzzle experience where players solve challenges to heal
+polluted environments.
+</p>
+
+<p>
+The goal was to create a top-down 2D adventure where
+puzzle-solving directly impacts the game world, making
+environmental recovery visible and rewarding.
+</p>
+
+<p>
+<b>My Role:</b>
+Game Design, Tilemap Level Design, C# Gameplay Programming,
+NPC Interaction, Quest Systems, Object Interactions
+and Puzzle Mechanics.
+</p>
+
+</section>
+
+
+<!-- KEY FEATURES -->
+
+<section>
+
+<h2>Key Features</h2>
+
+<div class="grid">
+
+<div class="card">
+<b>Environmental Restoration</b>
+Restore polluted areas through interactive
+environmental puzzles.
+</div>
+
+<div class="card">
+<b>Object Pickup & Drop</b>
+Pick up and place objects to interact
+with environmental puzzle elements.
+</div>
+
+<div class="card">
+<b>Quest & Mission System</b>
+Follow objectives to progress through
+environmental restoration tasks.
+</div>
+
+<div class="card">
+<b>NPC Interaction</b>
+Interact with Lisa to receive guidance
+and mission information.
+</div>
+
+<div class="card">
+<b>Top-Down Tilemap World</b>
+Explore handcrafted 2D environments
+using Unity Tilemaps.
+</div>
+
+<div class="card">
+<b>Puzzle Interaction System</b>
+Use environmental objects and interactions
+to solve restoration challenges.
+</div>
+
+<div class="card">
+<b>Pixel Art Environment</b>
+A cozy top-down pixel-art visual style
+using 32×32 pixel assets.
+</div>
+
+<div class="card">
+<b>Environmental Storytelling</b>
+Communicate pollution and restoration
+through changes in the game environment.
+</div>
+
+</div>
+
+</section>
+
+
+<!-- DESIGN HIGHLIGHTS -->
+
+<section>
+
+<h2>Design Highlights</h2>
+
+<ul>
+
+<li>
+Designed a top-down 2D world using
+32×32 pixel-art assets.
+</li>
+
+<li>
+Used environmental storytelling to communicate
+pollution and restoration.
+</li>
+
+<li>
+Designed object-based puzzles using
+pickup and drop interactions.
+</li>
+
+<li>
+Used NPC dialogue to guide players
+through objectives and missions.
+</li>
+
+<li>
+Connected puzzle interactions with
+environmental restoration logic.
+</li>
+
+<li>
+Planned gradual progression from polluted
+areas toward restored environments.
+</li>
+
+<li>
+Focused on making puzzle-solving
+and environmental feedback connected.
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- PLAYTEST & ITERATION -->
+
+<section>
+
+<h2>Playtest &amp; Iteration</h2>
+
+<p>
+During development, I encountered several technical
+challenges while building the interaction, physics
+and puzzle systems.
+</p>
+
+<ul>
+
+<li>
+
+<strong>Tilemap Collision Issues:</strong>
+
+The player was unable to cross certain water areas.
+I investigated the Player BoxCollider2D trigger settings
+to resolve the interaction issue.
+
+</li>
+
+
+<li>
+
+<strong>Object Pickup & Drop System:</strong>
+
+Initially, only one stone could be picked up correctly.
+I updated the StonePickup script, introduced object tags
+and improved Rigidbody2D handling while carrying objects.
+
+</li>
+
+
+<li>
+
+<strong>Puzzle Trigger Logic:</strong>
+
+Restoration needed to activate only when the correct
+puzzle object was placed.
+
+I added separate handling for Stone and WaterBlock
+objects and connected the WaterBlock drop interaction
+to PuzzleManager.RestoreGarden().
+
+</li>
+
+
+<li>
+
+<strong>NPC & Quest Progression:</strong>
+
+The initial mission flow required clear interaction
+between the player and NPC.
+
+I structured the progression around talking to Lisa,
+removing a barrier stone, reaching the river
+and returning to the NPC.
+
+</li>
+
+
+<li>
+
+<strong>Gameplay Interaction Debugging:</strong>
+
+I worked with colliders, tags and interaction
+conditions to improve how objects responded
+to player actions.
+
+</li>
+
+</ul>
+
+
+<div class="shot">
+
+<span class="todo">
+ADD: Before/After screenshots showing
+Stone Pickup, WaterBlock placement
+and restoration interaction.
+</span>
+
+</div>
+
+</section>
+
+
+<!-- WHAT I LEARNED -->
+
+<section>
+
+<h2>What I Learned</h2>
+
+<ul>
+
+<li>
+Building interactive environments
+using Unity Tilemaps.
+</li>
+
+<li>
+Understanding Rigidbody2D, BoxCollider2D
+and trigger-based interactions.
+</li>
+
+<li>
+Creating object pickup and drop systems
+using C#.
+</li>
+
+<li>
+Managing puzzle conditions using
+tags and gameplay logic.
+</li>
+
+<li>
+Connecting NPC interactions
+with quest progression.
+</li>
+
+<li>
+Debugging gameplay systems
+and resolving interaction issues.
+</li>
+
+<li>
+Structuring a playable prototype
+within a defined development scope.
+</li>
+
+<li>
+Understanding how environmental storytelling
+can support gameplay progression.
+</li>
+
+</ul>
+
+<p>
+<b>Next:</b>
+Complete the remaining environmental puzzles,
+improve restoration feedback, expand NPC interactions,
+polish gameplay UI and prepare a playable demo.
+</p>
+
+</section>
+
+
+<!-- GAMEPLAY VIDEO -->
+
+<section>
+
+<h2>Gameplay Video</h2>
+
+<div class="video">
+
+<div class="shot">
+
+<span class="todo">
+ADD: replace this box with
+&lt;iframe src="YOUTUBE_EMBED_LINK"
+allowfullscreen&gt;&lt;/iframe&gt;
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
 </main>
-<footer><div class="wrap">&copy; Keyy. Source code is private; walkthrough available on request. &middot; <a href="https://linkedin.com/in/ADD_LINKEDIN">LinkedIn</a> &middot; <a href="https://github.com/asarikayra-rgb/portfolio">Portfolio</a></div></footer></body></html>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="wrap">
+
+&copy; Keyy. Source code is private;
+walkthrough available on request.
+
+&middot;
+
+<a href="https://linkedin.com/in/ADD_LINKEDIN">
+LinkedIn
+</a>
+
+&middot;
+
+<a href="https://github.com/asarikayra-rgb/portfolio">
+Portfolio
+</a>
+
+</div>
+
+</footer>
+
+</body>
+</html>
