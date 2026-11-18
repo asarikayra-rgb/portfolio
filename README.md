@@ -29,7 +29,7 @@ I am currently looking for a **Game Design Internship or junior game design role
 
 <table>
   <tr>
-    <td width="33%" valign="top">
+    <td width="25%" valign="top">
       <a href="https://github.com/YOUR-USERNAME/3d-endless-runner-showcase">
         <img src="assets/runner-thumb.png" alt="3D Endless Runner">
       </a>
@@ -43,7 +43,7 @@ I am currently looking for a **Game Design Internship or junior game design role
       <a href="https://asarikayra-rgb.github.io/portfolio/case-studies/endless-runner.html"><b>Case study</b></a> |
       <a href="https://aadika-games.itch.io/mine-runner" target="_blank"><b>▶ Play</b></a>
     </td>
-    <td width="33%" valign="top">
+    <td width="25%" valign="top">
       <a href="https://github.com/YOUR-USERNAME/top-down-rpg-showcase">
         <img src="assets/rpg-thumb.png" alt="Top-Down RPG">
       </a>
@@ -57,7 +57,7 @@ I am currently looking for a **Game Design Internship or junior game design role
       <a href="https://asarikayra-rgb.github.io/portfolio/case-studies/top-down-rpg.html"><b>Case study</b></a> |
       <a href="[ADD PLAY LINK]"><b>Play prototype</b></a>
     </td>
-    <td width="33%" valign="top">
+    <td width="25%" valign="top">
       <a href="https://github.com/YOUR-USERNAME/2d-platformer-godot-showcase">
         <img src="assets/platformer-thumb.png" alt="2D Platformer">
       </a>
@@ -69,6 +69,19 @@ I am currently looking for a **Game Design Internship or junior game design role
       </p>
       <a href="https://asarikayra-rgb.github.io/portfolio/case-studies/2d-platformer.html"><b>Case study</b></a> |
       <a href="[ADD PLAY LINK]"><b>Play</b></a>
+  </td>
+  <td width="25%" valign="top">
+    <a href="https://github.com/asarikayra-rgb/portfolio">
+    <img src="assets/last-day-on-earth-thumb.png" alt="Game Design Analysis">
+  </a>
+  <h3>Last Day on Earth: Survival</h3>
+  <p>Game design analysis covering survival mechanics.</p>
+  <p>
+    <img src="https://img.shields.io/badge/Game%20Analysis-Design-blue" alt="Game Analysis">
+    <img src="https://img.shields.io/badge/UI%2FUX-Analysis-orange" alt="UI UX">
+  </p>
+  <a href="https://asarikayra-rgb.github.io/portfolio/case-studies/last-day-on-earth.html"><b>Case study</b></a>
+</td>
     </td>
   </tr>
 </table>
